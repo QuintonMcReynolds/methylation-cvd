@@ -1,0 +1,12 @@
+{
+ "artifact": {
+  "n": 40,
+  "mmd_alarm_rate": 1.0,
+  "hold_rate": 1.0
+ },
+ "clean": {
+  "n": 40,
+  "mmd_alarm_rate": 0.025,
+  "hold_rate": 0.025
+ }
+}

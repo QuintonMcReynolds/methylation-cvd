@@ -1,0 +1,29 @@
+{
+ "n": 282,
+ "prevalence": 0.5177304964539007,
+ "age_sex_auc": 0.6891670024174055,
+ "lightgbm": {
+  "methylation_only_adjusted_auc": 0.7082292506043514,
+  "age_sex_plus_methylation_auc": 0.742838436744561,
+  "increment_vs_age_sex": {
+   "diff": 0.07291131120148592,
+   "ci95": [
+    0.008330631528485722,
+    0.14054650433464977
+   ],
+   "p_one_sided": 0.0155
+  }
+ },
+ "elastic_net": {
+  "methylation_only_adjusted_auc": 0.6537872683319903,
+  "age_sex_plus_methylation_auc": 0.724889202256245,
+  "increment_vs_age_sex": {
+   "diff": 0.0580731724033997,
+   "ci95": [
+    0.001556174685019001,
+    0.11452450949232976
+   ],
+   "p_one_sided": 0.023
+  }
+ }
+}

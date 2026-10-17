@@ -1,0 +1,8 @@
+{
+ "n_samples": 391,
+ "sex_check_auc_oof": 1.0,
+ "sex_flags": [],
+ "n_probes": 818045,
+ "n_probes_kept": 807881,
+ "dropped_snp_or_noncpg": 10164
+}

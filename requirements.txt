@@ -1,0 +1,17 @@
+duckdb==1.5.6
+fastapi==0.143.3
+httpx==0.28.1
+lightgbm==4.7.0
+matplotlib==3.11.2
+mlflow==3.17.1
+mypy==2.4.0
+numpy==2.5.4
+pandas==3.0.6
+pyarrow==25.0.1
+pydantic==2.14.1
+pytest==9.1.1
+PyYAML==6.0.3
+ruff==0.17.1
+scikit-learn==1.9.1
+scipy==1.18.1
+uvicorn==0.54.0

@@ -1,0 +1,92 @@
+[
+ {
+  "event": "register",
+  "version": "7",
+  "alias": "champion",
+  "n_train": 169
+ },
+ {
+  "event": "batch",
+  "batch": 1,
+  "injected_artifact": false,
+  "n": 29,
+  "outlier_samples": 4,
+  "batch_mmd_p": 0.33554817275747506,
+  "batch_drift": false,
+  "model_cpgs_shifted_fdr05": 0,
+  "model_cpgs_total": 1040,
+  "score_psi": 1.519312175706759,
+  "mean_risk": 0.5062424540519714,
+  "hold": false,
+  "auc_on_batch_once_labelled": 0.5931372549019608
+ },
+ {
+  "event": "batch",
+  "batch": 2,
+  "injected_artifact": true,
+  "n": 28,
+  "outlier_samples": 27,
+  "batch_mmd_p": 0.0033222591362126247,
+  "batch_drift": true,
+  "model_cpgs_shifted_fdr05": 660,
+  "model_cpgs_total": 1040,
+  "score_psi": 2.737433203160578,
+  "mean_risk": 0.4345771372318268,
+  "hold": true,
+  "action": "HOLD: drift detected, results not released; batch re-normalised and re-checked",
+  "after_renormalisation": {
+   "batch_mmd_p": 0.15946843853820597,
+   "batch_drift": false,
+   "hold": false,
+   "model_cpgs_shifted_fdr05": 3,
+   "score_psi": 3.127369207511579
+  },
+  "auc_on_batch_once_labelled": 0.7754010695187167
+ },
+ {
+  "event": "batch",
+  "batch": 3,
+  "injected_artifact": false,
+  "n": 28,
+  "outlier_samples": 2,
+  "batch_mmd_p": 0.4717607973421927,
+  "batch_drift": false,
+  "model_cpgs_shifted_fdr05": 0,
+  "model_cpgs_total": 1040,
+  "score_psi": 1.0180795524696356,
+  "mean_risk": 0.532051146030426,
+  "hold": false,
+  "auc_on_batch_once_labelled": 0.6145833333333334
+ },
+ {
+  "event": "batch",
+  "batch": 4,
+  "injected_artifact": false,
+  "n": 28,
+  "outlier_samples": 2,
+  "batch_mmd_p": 0.0033222591362126247,
+  "batch_drift": true,
+  "model_cpgs_shifted_fdr05": 0,
+  "model_cpgs_total": 1040,
+  "score_psi": 0.2567951298559236,
+  "mean_risk": 0.5639587640762329,
+  "hold": false,
+  "action": "released with a warning: MMD drift alone (no model-CpG shift, few outliers); logged for review",
+  "auc_on_batch_once_labelled": 0.8316326530612246
+ },
+ {
+  "event": "challenger",
+  "version": "8",
+  "n_train": 254,
+  "eval_batch": 4,
+  "auc_champion": 0.8316326530612246,
+  "auc_challenger": 0.8520408163265306,
+  "auc_diff": 0.02054186021776064,
+  "ci95": [
+   -0.1283888981729055,
+   0.18181818181818177
+  ],
+  "promoted": false,
+  "rule": "promote if the lower 95% bound of (challenger - champion) AUC > -0.02"
+ }
+]
