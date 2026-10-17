@@ -19,3 +19,6 @@ ignore = ["E731", "E741", "N803", "N806"]
 python_version = "3.11"
 ignore_missing_imports = true
 files = ["mcvd"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/make_report.py" = ["E501"]   # long f-strings that build README tables

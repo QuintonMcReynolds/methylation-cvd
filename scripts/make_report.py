@@ -60,7 +60,7 @@ def incr_figure():
         d = json.loads((REP / f"incremental_{t}.json").read_text())
         for m in ("lightgbm", "elastic_net"):
             rows.append((t, m, d[m]["increment_vs_age_sex"]))
-    for i, (t, m, r) in enumerate(rows):
+    for i, (t, _m, r) in enumerate(rows):
         ax.errorbar(r["diff"], i, xerr=[[r["diff"] - r["ci95"][0]], [r["ci95"][1] - r["diff"]]], fmt="o", color=TASK_C[t], ms=7,
                     capsize=3, lw=2)
     ax.axvline(0, color=GREY, lw=1)
